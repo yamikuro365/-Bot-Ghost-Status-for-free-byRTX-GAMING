@@ -73,7 +73,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: '/play ลิงค์ หรือ ชื่อเพลง'}], //activities: [{ name: currentStatus}],
+    activities: [{ name: currentStatus}], //activities: [{ name: currentStatus}],
     type: 'PLAYING',
     status: 'invisible' // online, idle, invisible, dnd
   });
