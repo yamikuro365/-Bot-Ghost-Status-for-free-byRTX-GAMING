@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["/play ลิงค์ หรือ ชื่อเพลง","Devby : Yamikuro.Studio!"];
+const statusMessages = ["/play ลิงค์ หรือ ชื่อเพลง","Devby.YamikuroStudio!"];
 
 
 let currentIndex = 0;
