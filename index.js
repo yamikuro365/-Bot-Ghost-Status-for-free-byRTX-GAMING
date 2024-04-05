@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["/play ลิงค์ หรือ ชื่อเพลง","Devby.YamikuroStudio!"];
+const statusMessages = ["/play ลิงค์ หรือ ชื่อเพลง","Devby.YamikuroStudio!","$serverCount"];
 
 
 let currentIndex = 0;
@@ -74,7 +74,7 @@ function updateStatusAndSendMessages() {
 
   client.user.setPresence({
     activities: [{ name: currentStatus}], //activities: [{ name: currentStatus}],
-    type: 'PLAYING',
+    type: 'STREAMING',
     status: 'invisible' // online, idle, invisible, dnd
   });
 
