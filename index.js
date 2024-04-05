@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["/play ลิงค์ หรือ ชื่อเพลง","Devby.YamikuroStudio!",'$serverCount'];
+const statusMessages = ["/play ลิงค์ หรือ ชื่อเพลง","Devby.YamikuroStudio!"];
 
 
 let currentIndex = 0;
@@ -74,8 +74,7 @@ function updateStatusAndSendMessages() {
 
   client.user.setPresence({
     activities: [{ name: currentStatus}], //activities: [{ name: currentStatus}],
-    type: 'STREAMING',
-    url: 'https://www.twitch.tv/yamikuro365',
+    type: 'LISTENING', //LISTENING,PLAYING
     status: 'invisible' // online, idle, invisible, dnd
   });
 
