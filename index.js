@@ -74,7 +74,8 @@ function updateStatusAndSendMessages() {
 
   client.user.setPresence({
     activities: [{ name: currentStatus}], //activities: [{ name: currentStatus}],
-    type: 'LISTENING', //LISTENING,PLAYING
+    type: 'STREAMING', //LISTENING,PLAYING,STREAMING
+    url: 'https://www.twitch.tv/yamikuro365',
     status: 'invisible' // online, idle, invisible, dnd
   });
 
