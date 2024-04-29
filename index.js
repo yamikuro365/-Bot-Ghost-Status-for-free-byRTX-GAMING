@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["/play ลิงค์ หรือ ชื่อเพลง","Yamikuro-Music_Bot V1.1.0","Devby.YamikuroStudio!"];
+const statusMessages = ["Yamikuro-Music-Bot V2.0.0","Devby.YamikuroStudio!"];
 
 
 let currentIndex = 0;
